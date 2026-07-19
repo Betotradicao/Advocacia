@@ -1,0 +1,130 @@
+{
+  "marca": {
+    "nome": "Carlos Eduardo Ferreira Advocacia",
+    "logo": "assets/logo-full.jpg",
+    "favicon": "assets/logo.jpeg"
+  },
+  "seo": {
+    "titulo": "Carlos Eduardo Ferreira Advocacia | São José dos Campos - SP",
+    "descricao": "Advocacia com excelência técnica e atuação estratégica em Direito Criminal, Civil, de Família e das Sucessões. São José dos Campos - SP."
+  },
+  "hero": {
+    "imagem": "assets/hero-arco.jpg",
+    "eyebrow": "São José dos Campos · SP",
+    "titulo_antes": "Advocacia com ",
+    "titulo_destaque": "excelência técnica",
+    "titulo_depois": ", ética e atuação estratégica",
+    "subtitulo": "Soluções jurídicas seguras e personalizadas em Direito Criminal, Civil, de Família e das Sucessões — conduzidas com seriedade, responsabilidade e foco na defesa dos seus interesses.",
+    "botao": "Fale com um especialista"
+  },
+  "areas": {
+    "eyebrow": "O que fazemos",
+    "titulo": "Áreas de Atuação",
+    "subtitulo": "Atuação completa e especializada, do aconselhamento preventivo à defesa em todas as instâncias.",
+    "lista": [
+      {
+        "icone": "balanca",
+        "titulo": "Direito Criminal",
+        "itens": [
+          "Inquérito Policial",
+          "Acompanhamento de Depoimentos e Prestação de Esclarecimentos",
+          "Investigação Defensiva",
+          "Prisão em Flagrante",
+          "Cumprimento de Mandado de Prisão",
+          "Audiência de Custódia",
+          "Defesa em Juizados Especiais Criminais",
+          "Defesa em Varas Criminais",
+          "Acordo de Não Persecução Penal (ANPP)",
+          "Recursos Criminais",
+          "Sustentações Orais em Tribunais",
+          "Habeas Corpus",
+          "Mandado de Segurança",
+          "Revisão Criminal",
+          "Execução Penal"
+        ]
+      },
+      {
+        "icone": "documento",
+        "titulo": "Direito Civil",
+        "itens": [
+          "Elaboração, análise e revisão de contratos",
+          "Responsabilidade civil",
+          "Ações de indenização por danos materiais e morais",
+          "Cobranças judiciais e extrajudiciais",
+          "Demandas patrimoniais"
+        ]
+      },
+      {
+        "icone": "familia",
+        "titulo": "Direito de Família",
+        "itens": [
+          "Divórcio consensual e litigioso",
+          "Guarda e regulamentação de convivência",
+          "Pensão alimentícia",
+          "Reconhecimento e investigação de paternidade",
+          "Dissolução de união estável",
+          "Partilha de bens",
+          "Demais demandas relacionadas ao Direito de Família"
+        ]
+      },
+      {
+        "icone": "casa",
+        "titulo": "Direito das Sucessões",
+        "itens": [
+          "Inventário judicial e extrajudicial",
+          "Planejamento sucessório",
+          "Herança e partilha de bens",
+          "Testamentos",
+          "Alvará judicial",
+          "Orientação jurídica completa para sucessões patrimoniais"
+        ]
+      }
+    ]
+  },
+  "sobre": {
+    "eyebrow": "Quem somos",
+    "titulo": "Sobre Nós",
+    "texto": "O Carlos Eduardo Ferreira Advocacia dedica-se à prestação de serviços jurídicos com excelência técnica, ética e atuação estratégica. Nosso compromisso é oferecer soluções jurídicas seguras e personalizadas, conduzindo cada demanda com seriedade, responsabilidade e foco na defesa dos interesses de nossos clientes.",
+    "foto": "assets/carlos.jpg",
+    "foto_nome": "Dr. Carlos Eduardo Ferreira",
+    "foto_cargo": "Advogado",
+    "botao": "Agende uma consulta"
+  },
+  "mvv": {
+    "eyebrow": "Nossos princípios",
+    "titulo": "Missão, Visão e Valores",
+    "missao": "Exercer a advocacia com excelência, ética e compromisso, oferecendo soluções jurídicas seguras e personalizadas, pautadas na justiça, na integridade e no respeito à dignidade de cada pessoa. Acreditamos que resultados consistentes são construídos com dedicação, perseverança e confiança no processo, honrando cada etapa do caminho.",
+    "visao": "Ser reconhecido como um escritório de referência pela excelência, credibilidade e confiança, construindo relações sólidas por meio de uma atuação humana, responsável e comprometida com a promoção da justiça. Nossa aspiração é transformar desafios em conquistas por meio de uma atuação firme, estratégica e guiada por princípios.",
+    "valores": [
+      "Integridade em todas as ações",
+      "Justiça como princípio e propósito",
+      "Ética e responsabilidade",
+      "Respeito à dignidade de cada pessoa",
+      "Atendimento humanizado e empático",
+      "Transparência e confiança nas relações",
+      "Compromisso com a verdade",
+      "Eficiência no processo",
+      "Gratidão e propósito em nossa atuação"
+    ]
+  },
+  "essencia": {
+    "eyebrow": "Nossa essência",
+    "texto": "Acreditamos que quem confia no processo encontra resultados que vão além do esperado. Cada passo dado com integridade, dedicação e propósito representa um investimento no futuro, pois grandes conquistas são construídas com constância, fé e compromisso."
+  },
+  "contato": {
+    "eyebrow": "Estamos à disposição",
+    "titulo": "Fale Conosco",
+    "subtitulo": "Entre em contato e agende um atendimento. Respondemos com agilidade e total confidencialidade.",
+    "telefone": "(12) 99660-6498",
+    "whatsapp": "5512996606498",
+    "email": "carlos.ferreiraadv12@gmail.com",
+    "endereco_predio": "Eco Tower Corporate Offices",
+    "endereco_rua": "Av. Dr. Nélson d'Ávila, 1837 — Jardim São Dimas",
+    "endereco_cidade": "São José dos Campos - SP · CEP 12245-030",
+    "mapa_busca": "Av. Dr. Nélson d'Ávila, 1837 - Jardim São Dimas, São José dos Campos - SP"
+  },
+  "rodape": {
+    "descricao": "Advocacia com excelência técnica, ética e atuação estratégica.",
+    "copyright": "Carlos Eduardo Ferreira Advocacia. Todos os direitos reservados."
+  }
+}

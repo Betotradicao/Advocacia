@@ -1,0 +1,61 @@
+# ============================================
+#  Carlos Eduardo Ferreira Advocacia
+# ============================================
+
+DirectoryIndex index.php index.html
+
+# Não listar o conteúdo das pastas
+Options -Indexes
+
+# ---------- Cabeçalhos de segurança ----------
+<IfModule mod_headers.c>
+    Header always set X-Content-Type-Options "nosniff"
+    Header always set X-Frame-Options "SAMEORIGIN"
+    Header always set Referrer-Policy "strict-origin-when-cross-origin"
+    Header always set Permissions-Policy "geolocation=(), microphone=(), camera=()"
+    # Não deixa o navegador guardar as páginas do painel
+    <FilesMatch "^(painel|senha|salvar|instalar)\.php$">
+        Header always set Cache-Control "no-store, no-cache, must-revalidate"
+    </FilesMatch>
+</IfModule>
+
+# ---------- Bloqueia arquivos que não devem ser servidos ----------
+<FilesMatch "(?i)^(\.htaccess|\.htpasswd|.*\.json|.*\.md|.*\.log|composer\..*)$">
+    <IfModule mod_authz_core.c>
+        Require all denied
+    </IfModule>
+    <IfModule !mod_authz_core.c>
+        Order allow,deny
+        Deny from all
+    </IfModule>
+</FilesMatch>
+
+# ---------- Cache dos arquivos estáticos ----------
+# O site acrescenta ?v=data nas URLs, então cache longo é seguro:
+# quando a imagem muda no painel, a URL muda junto.
+<IfModule mod_expires.c>
+    ExpiresActive On
+    ExpiresByType image/jpeg "access plus 1 year"
+    ExpiresByType image/png  "access plus 1 year"
+    ExpiresByType image/webp "access plus 1 year"
+    ExpiresByType text/css   "access plus 1 month"
+    ExpiresByType text/javascript "access plus 1 month"
+    ExpiresByType application/javascript "access plus 1 month"
+</IfModule>
+
+# ---------- Compressão ----------
+<IfModule mod_deflate.c>
+    AddOutputFilterByType DEFLATE text/html text/css text/plain text/xml
+    AddOutputFilterByType DEFLATE application/javascript text/javascript
+    AddOutputFilterByType DEFLATE image/svg+xml
+</IfModule>
+
+# ---------- HTTPS ----------
+# Descomente as três linhas abaixo DEPOIS de ativar o certificado SSL
+# na hospedagem. Antes disso, elas deixam o site inacessível.
+#
+# <IfModule mod_rewrite.c>
+#     RewriteEngine On
+#     RewriteCond %{HTTPS} off
+#     RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+# </IfModule>

@@ -1,0 +1,15 @@
+# O site roda em Linux (Ubuntu na VPS), mas é editado no Windows.
+# Normaliza os finais de linha para LF no repositório, evitando que
+# arquivos como .htaccess cheguem ao servidor com CRLF e quebrem.
+
+* text=auto eol=lf
+
+# Binários: nunca converter
+*.jpg  binary
+*.jpeg binary
+*.png  binary
+*.webp binary
+*.gif  binary
+*.ico  binary
+*.pdf  binary
+*.zip  binary

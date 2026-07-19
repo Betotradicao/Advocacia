@@ -1,0 +1,44 @@
+# ============================================
+#  NUNCA versionar — contém segredos
+# ============================================
+
+# Hashes de senha do painel. Se isso vazar, expõe o acesso administrativo.
+data/users.php
+
+# Registro de tentativas de login (contém IPs)
+data/.tentativas.json
+data/*.tmp
+
+# ============================================
+#  Conteúdo enviado pelo cliente
+# ============================================
+
+# Imagens que o cliente subir pelo painel ficam só no servidor,
+# senão cada troca de foto vira um commit e o repositório incha.
+assets/uploads/*
+!assets/uploads/.htaccess
+
+# ============================================
+#  Arquivos de trabalho
+# ============================================
+
+# Versão estática antiga, com os textos fixos no HTML.
+# Foi substituída pelo index.php, que lê tudo de data/content.json.
+# Mantida no seu computador só por histórico — não vai para o servidor,
+# senão alguém edita o arquivo errado achando que é o site.
+index.html
+
+# Build do preview (arquivo único de 1,3 MB com tudo embutido)
+.build/
+
+# Imagens originais recebidas por WhatsApp/ChatGPT, antes do tratamento
+WhatsApp Image*
+ChatGPT Image*
+
+# Sistema operacional e editores
+Thumbs.db
+desktop.ini
+.DS_Store
+.vscode/
+.idea/
+*.swp
