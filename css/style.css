@@ -164,7 +164,9 @@ h1,h2,h3,h4{font-family:var(--serif);font-weight:600;line-height:1.15;margin:0}
 .section-dark p{color:var(--text-invert-mute)}
 
 .section-head{text-align:center;max-width:720px;margin:0 auto 64px}
-.section-head h2{font-size:clamp(2rem,3.6vw,2.9rem);margin-bottom:18px;position:relative;display:inline-block}
+/* o eyebrow precisa ocupar a linha inteira, senão fica lado a lado com o h2 */
+.section-head .eyebrow{display:block}
+.section-head h2{font-size:clamp(2rem,3.6vw,2.9rem);margin-bottom:18px;position:relative;display:block}
 .section-head h2::after{
   content:'';display:block;width:64px;height:2px;
   background:var(--gold-grad);margin:20px auto 0;
