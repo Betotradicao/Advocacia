@@ -12,9 +12,9 @@
   "hero": {
     "imagem": "assets/hero-arco.jpg",
     "eyebrow": "",
-    "titulo_antes": "Advocacia com ",
-    "titulo_destaque": "excelência técnica",
-    "titulo_depois": ", ética e atuação estratégica",
+    "titulo_antes": "Advocacia ",
+    "titulo_destaque": "especializada",
+    "titulo_depois": " e estratégica",
     "subtitulo": "Soluções jurídicas seguras e personalizadas em Direito Criminal, Direito Civil, Direito de Família e Direito das Sucessões, conduzidas com seriedade, responsabilidade e foco na defesa dos seus interesses.",
     "botao": "Fale com um especialista"
   },
@@ -126,7 +126,7 @@
     "mapa_busca": "Av. Dr. Nélson d'Ávila, 1837 - Jardim São Dimas, São José dos Campos - SP"
   },
   "rodape": {
-    "descricao": "Advocacia com excelência técnica, ética e atuação estratégica.",
+    "descricao": "Advocacia especializada e estratégica.",
     "copyright": "Carlos Eduardo Ferreira Advocacia. Todos os direitos reservados."
   }
 }
