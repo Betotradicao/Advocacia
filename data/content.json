@@ -12,9 +12,9 @@
   "hero": {
     "imagem": "assets/hero-arco.jpg",
     "eyebrow": "",
-    "titulo_antes": "Advocacia ",
-    "titulo_destaque": "especializada",
-    "titulo_depois": " e estratégica",
+    "titulo_antes": "Advocacia especializada e estratégica",
+    "titulo_destaque": "",
+    "titulo_depois": "",
     "subtitulo": "Soluções jurídicas seguras e personalizadas em Direito Criminal, Direito Civil, Direito de Família e Direito das Sucessões, conduzidas com seriedade, responsabilidade e foco na defesa dos seus interesses.",
     "botao": "Fale com um especialista"
   },

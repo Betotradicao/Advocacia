@@ -85,7 +85,7 @@ $og_ver = @filemtime(RAIZ . '/' . $og_img); ?>
     <?php if (v('hero.eyebrow')): // se ficar vazio, some junto com a linha dourada ?>
     <span class="hero-eyebrow"><?php ee(v('hero.eyebrow')); ?></span>
     <?php endif; ?>
-    <h1><?php ee(v('hero.titulo_antes')); ?><span class="gold"><?php ee(v('hero.titulo_destaque')); ?></span><?php ee(v('hero.titulo_depois')); ?></h1>
+    <h1><?php ee(v('hero.titulo_antes')); ?><?php if (v('hero.titulo_destaque')): ?><span class="gold"><?php ee(v('hero.titulo_destaque')); ?></span><?php endif; ?><?php ee(v('hero.titulo_depois')); ?></h1>
     <p><?php ee(v('hero.subtitulo')); ?></p>
     <div class="hero-actions">
       <a href="<?php echo e(link_whatsapp('Olá, gostaria de falar com um advogado.')); ?>" target="_blank" rel="noopener" class="btn btn-gold"><?php ee(v('hero.botao')); ?></a>
