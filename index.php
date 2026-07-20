@@ -131,6 +131,9 @@ $og_ver = @filemtime(RAIZ . '/' . $og_img); ?>
       <div class="sobre-legenda">
         <strong><?php ee(v('sobre.foto_nome')); ?></strong>
         <span><?php ee(v('sobre.foto_cargo')); ?></span>
+        <?php if (v('sobre.foto_oab')): ?>
+        <small><?php ee(v('sobre.foto_oab')); ?></small>
+        <?php endif; ?>
       </div>
     </div>
     <div class="sobre-text">

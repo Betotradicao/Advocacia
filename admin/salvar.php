@@ -66,6 +66,7 @@ $c['sobre']['titulo']     = $t('sobre_titulo');
 $c['sobre']['texto']      = $t('sobre_texto');
 $c['sobre']['foto_nome']  = $t('sobre_foto_nome');
 $c['sobre']['foto_cargo'] = $t('sobre_foto_cargo');
+$c['sobre']['foto_oab']   = $t('sobre_foto_oab');
 $c['sobre']['botao']      = $t('sobre_botao');
 
 /* ---------- missão, visão, valores, essência ---------- */

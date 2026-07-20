@@ -261,6 +261,11 @@ function campo_imagem(string $nome, string $rotulo, ?string $atual, string $ajud
     </div>
   </div>
   <div class="campo">
+    <label for="sobre_oab">Inscrição na OAB</label>
+    <input type="text" id="sobre_oab" name="sobre_foto_oab" value="<?php ee($c['sobre']['foto_oab'] ?? ''); ?>">
+    <small class="dica">Terceira linha da legenda. Deixe em branco para não exibir.</small>
+  </div>
+  <div class="campo">
     <label for="sobre_botao">Texto do botão</label>
     <input type="text" id="sobre_botao" name="sobre_botao" value="<?php ee($c['sobre']['botao']); ?>">
   </div>
