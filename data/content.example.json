@@ -1,13 +1,13 @@
 {
   "marca": {
-    "nome": "Carlos Eduardo Ferreira Advocacia",
+    "nome": "Carlos Eduardo Ferreira Advogado",
     "logo": "assets/logo-full.jpg",
     "favicon": "assets/logo.jpeg",
     "og_imagem": "assets/og-image.jpg"
   },
   "seo": {
     "titulo": "Carlos Eduardo Ferreira Advocacia | São José dos Campos - SP",
-    "descricao": "Advocacia com excelência técnica e atuação estratégica em Direito Criminal, Civil, de Família e das Sucessões. São José dos Campos - SP."
+    "descricao": "Advocacia especializada e estratégica em Direito Criminal, Direito Civil, Direito de Família e Direito das Sucessões. São José dos Campos - SP."
   },
   "hero": {
     "imagem": "assets/hero-arco.jpg",
@@ -83,12 +83,12 @@
     ]
   },
   "sobre": {
-    "eyebrow": "",
-    "titulo": "Sobre Nós",
-    "texto": "O Escritório Carlos Eduardo Ferreira Advocacia dedica-se à prestação de serviços jurídicos com excelência técnica, ética e atuação estratégica. Nosso compromisso é oferecer soluções jurídicas seguras e personalizadas, conduzindo cada demanda com seriedade, responsabilidade e foco na defesa dos interesses de nossos clientes.",
+    "eyebrow": "SOBRE NÓS",
+    "titulo": "",
+    "texto": "O Escritório Carlos Eduardo Ferreira dedica-se à prestação de serviços jurídicos com excelência técnica, ética e atuação estratégica. Nosso compromisso é oferecer soluções jurídicas seguras e personalizadas, conduzindo cada demanda com seriedade, responsabilidade e foco na defesa dos interesses de nossos clientes.",
     "foto": "assets/carlos.jpg",
     "foto_nome": "Dr. Carlos Eduardo Ferreira",
-    "foto_cargo": "Sócio-Fundador",
+    "foto_cargo": "Sócio e Fundador",
     "foto_oab": "OAB/SP nº 517.292",
     "botao": "Agende uma consulta"
   },
@@ -126,7 +126,7 @@
     "mapa_busca": "Av. Dr. Nélson d'Ávila, 1837 - Jardim São Dimas, São José dos Campos - SP"
   },
   "rodape": {
-    "descricao": "Advocacia especializada e estratégica.",
+    "descricao": "",
     "copyright": "Carlos Eduardo Ferreira Advocacia. Todos os direitos reservados."
   }
 }

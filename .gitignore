@@ -5,6 +5,11 @@
 # Hashes de senha do painel. Se isso vazar, expõe o acesso administrativo.
 data/users.php
 
+# O conteúdo do site em produção é editado pelo painel, direto no servidor.
+# Se ficasse versionado, todo "git pull" apagaria o que o cliente escreveu.
+# O modelo abaixo é a semente da primeira instalação e continua no Git.
+data/content.json
+
 # Registro de tentativas de login (contém IPs)
 data/.tentativas.json
 data/*.tmp

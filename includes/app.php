@@ -5,6 +5,7 @@
 
 define('RAIZ', dirname(__DIR__));
 define('ARQ_CONTEUDO', RAIZ . '/data/content.json');
+define('ARQ_CONTEUDO_MODELO', RAIZ . '/data/content.example.json');
 define('ARQ_USUARIOS', RAIZ . '/data/users.php');
 define('DIR_UPLOAD', RAIZ . '/assets/uploads');
 
@@ -18,6 +19,13 @@ function conteudo(): array
     if ($cache !== null) {
         return $cache;
     }
+    // Numa instalação nova o content.json ainda não existe, porque ele não é
+    // versionado: o conteúdo de produção vive só no servidor, editado pelo
+    // painel. Aqui ele nasce a partir do modelo que vem no repositório.
+    if (!is_file(ARQ_CONTEUDO) && is_file(ARQ_CONTEUDO_MODELO)) {
+        @copy(ARQ_CONTEUDO_MODELO, ARQ_CONTEUDO);
+    }
+
     $bruto = @file_get_contents(ARQ_CONTEUDO);
     if ($bruto === false) {
         http_response_code(500);
