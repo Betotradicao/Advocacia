@@ -99,7 +99,7 @@ $og_ver = @filemtime(RAIZ . '/' . $og_img); ?>
 <section class="section" id="areas">
   <div class="container">
     <div class="section-head">
-      <span class="eyebrow"><?php ee(v('areas.eyebrow')); ?></span>
+      <?php if (v('areas.eyebrow')): ?><span class="eyebrow"><?php ee(v('areas.eyebrow')); ?></span><?php endif; ?>
       <h2><?php ee(v('areas.titulo')); ?></h2>
       <p class="section-sub"><?php ee(v('areas.subtitulo')); ?></p>
     </div>
@@ -139,7 +139,7 @@ $og_ver = @filemtime(RAIZ . '/' . $og_img); ?>
       </div>
     </div>
     <div class="sobre-text">
-      <span class="eyebrow"><?php ee(v('sobre.eyebrow')); ?></span>
+      <?php if (v('sobre.eyebrow')): ?><span class="eyebrow"><?php ee(v('sobre.eyebrow')); ?></span><?php endif; ?>
       <h2><?php ee(v('sobre.titulo')); ?></h2>
       <p><?php ee(v('sobre.texto')); ?></p>
       <a href="#contato" class="btn btn-gold"><?php ee(v('sobre.botao')); ?></a>
@@ -151,7 +151,7 @@ $og_ver = @filemtime(RAIZ . '/' . $og_img); ?>
 <section class="section" id="mvv">
   <div class="container">
     <div class="section-head">
-      <span class="eyebrow"><?php ee(v('mvv.eyebrow')); ?></span>
+      <?php if (v('mvv.eyebrow')): ?><span class="eyebrow"><?php ee(v('mvv.eyebrow')); ?></span><?php endif; ?>
       <h2><?php ee(v('mvv.titulo')); ?></h2>
     </div>
 
@@ -181,7 +181,7 @@ $og_ver = @filemtime(RAIZ . '/' . $og_img); ?>
 <!-- ===== NOSSA ESSÊNCIA ===== -->
 <section class="essencia" id="essencia">
   <div class="container">
-    <span class="eyebrow"><?php ee(v('essencia.eyebrow')); ?></span>
+    <?php if (v('essencia.eyebrow')): ?><span class="eyebrow"><?php ee(v('essencia.eyebrow')); ?></span><?php endif; ?>
     <blockquote><?php ee(v('essencia.texto')); ?></blockquote>
   </div>
 </section>
@@ -190,7 +190,7 @@ $og_ver = @filemtime(RAIZ . '/' . $og_img); ?>
 <section class="section section-dark" id="contato">
   <div class="container">
     <div class="section-head">
-      <span class="eyebrow"><?php ee(v('contato.eyebrow')); ?></span>
+      <?php if (v('contato.eyebrow')): ?><span class="eyebrow"><?php ee(v('contato.eyebrow')); ?></span><?php endif; ?>
       <h2><?php ee(v('contato.titulo')); ?></h2>
       <p class="section-sub"><?php ee(v('contato.subtitulo')); ?></p>
     </div>
