@@ -96,6 +96,7 @@ function campo_imagem(string $nome, string $rotulo, ?string $atual, string $ajud
 
   <?php campo_imagem('img_logo', 'Logo (usado no topo e no rodapé)', $c['marca']['logo'] ?? null, 'Formato horizontal funciona melhor. Fundo escuro combina com o cabeçalho.'); ?>
   <?php campo_imagem('img_favicon', 'Ícone da aba do navegador', $c['marca']['favicon'] ?? null, 'Imagem quadrada, de preferência o símbolo sozinho.'); ?>
+  <?php campo_imagem('img_og', 'Imagem ao compartilhar o link', $c['marca']['og_imagem'] ?? null, 'É a prévia que aparece quando o link é enviado no WhatsApp. Use 1200 x 630 pixels.'); ?>
 
   <h2>Buscadores (Google)</h2>
   <div class="campo">

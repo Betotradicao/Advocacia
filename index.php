@@ -26,7 +26,28 @@ $areas = v('areas.lista', []);
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title><?php ee(v('seo.titulo')); ?></title>
 <meta name="description" content="<?php ee(v('seo.descricao')); ?>">
+<link rel="canonical" href="<?php echo e(url_absoluta()); ?>">
 <link rel="icon" href="<?php echo asset(v('marca.favicon')); ?>">
+
+<?php // Prévia ao compartilhar no WhatsApp, Facebook, LinkedIn e Telegram
+$og_img = v('marca.og_imagem') ?: v('marca.logo');
+$og_ver = @filemtime(RAIZ . '/' . $og_img); ?>
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="<?php ee(v('marca.nome')); ?>">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:url" content="<?php echo e(url_absoluta()); ?>">
+<meta property="og:title" content="<?php ee(v('seo.titulo')); ?>">
+<meta property="og:description" content="<?php ee(v('seo.descricao')); ?>">
+<meta property="og:image" content="<?php echo e(url_absoluta($og_img) . ($og_ver ? '?v=' . $og_ver : '')); ?>">
+<meta property="og:image:secure_url" content="<?php echo e(url_absoluta($og_img) . ($og_ver ? '?v=' . $og_ver : '')); ?>">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="<?php ee(v('marca.nome')); ?>">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="<?php ee(v('seo.titulo')); ?>">
+<meta name="twitter:description" content="<?php ee(v('seo.descricao')); ?>">
+<meta name="twitter:image" content="<?php echo e(url_absoluta($og_img) . ($og_ver ? '?v=' . $og_ver : '')); ?>">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">

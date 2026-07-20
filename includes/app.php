@@ -95,6 +95,21 @@ function asset(string $caminho): string
     return e($caminho) . ($versao ? '?v=' . $versao : '');
 }
 
+/**
+ * URL absoluta de um arquivo do site.
+ *
+ * WhatsApp, Facebook e Google exigem endereço completo nas tags de
+ * compartilhamento — caminho relativo é ignorado e o link sai sem imagem.
+ */
+function url_absoluta(string $caminho = ''): string
+{
+    $https = (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off')
+        || (($_SERVER['HTTP_X_FORWARDED_PROTO'] ?? '') === 'https');
+    $host = $_SERVER['HTTP_HOST'] ?? 'www.carloseduardoferreiraadv.com.br';
+
+    return ($https ? 'https' : 'http') . '://' . $host . '/' . ltrim($caminho, '/');
+}
+
 /* ---------------------------------------------------------------
    Sessão e autenticação
    --------------------------------------------------------------- */

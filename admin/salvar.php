@@ -112,6 +112,7 @@ $c['rodape']['copyright'] = $t('rodape_copyright');
 $imagens = [
     'img_logo'    => ['marca', 'logo',    'logo'],
     'img_favicon' => ['marca', 'favicon', 'icone'],
+    'img_og'      => ['marca', 'og_imagem', 'compartilhamento'],
     'img_hero'    => ['hero',  'imagem',  'capa'],
     'img_sobre'   => ['sobre', 'foto',    'foto'],
 ];

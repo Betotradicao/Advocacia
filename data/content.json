@@ -2,7 +2,8 @@
   "marca": {
     "nome": "Carlos Eduardo Ferreira Advocacia",
     "logo": "assets/logo-full.jpg",
-    "favicon": "assets/logo.jpeg"
+    "favicon": "assets/logo.jpeg",
+    "og_imagem": "assets/og-image.jpg"
   },
   "seo": {
     "titulo": "Carlos Eduardo Ferreira Advocacia | São José dos Campos - SP",
