@@ -82,7 +82,9 @@ $og_ver = @filemtime(RAIZ . '/' . $og_img); ?>
   <div class="hero-bg"></div>
   <div class="hero-overlay"></div>
   <div class="container hero-content">
+    <?php if (v('hero.eyebrow')): // se ficar vazio, some junto com a linha dourada ?>
     <span class="hero-eyebrow"><?php ee(v('hero.eyebrow')); ?></span>
+    <?php endif; ?>
     <h1><?php ee(v('hero.titulo_antes')); ?><span class="gold"><?php ee(v('hero.titulo_destaque')); ?></span><?php ee(v('hero.titulo_depois')); ?></h1>
     <p><?php ee(v('hero.subtitulo')); ?></p>
     <div class="hero-actions">
